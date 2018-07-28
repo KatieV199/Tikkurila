@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tekijät  - Tikkurilan Tekijäpankki</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Font-awesome.css -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="logo"></div>
+				<h1 class="title uppercase">TEKIJÄPANKKI</h1>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<!-- Desc Menu-->
+			<menu class="clearfix">
+				<div class="container">
+					<ul class="menu-list">
+						<li class="menu-item">
+							<a class="menu-item_link uppercase" href="#" >
+								<img src="images/home.png" alt="home-icon">
+							</a>
+						</li>
+						<li class="menu-item">
+							<a class="menu-item_link uppercase" href="#">Tekijät</a>
+						</li>
+						<li class="menu-item">
+							<a class="menu-item_link uppercase" href="#">Tietoa palvelusta</a>
+						</li>
+					</ul>
+
+
+					<a class="btn header-bottom_btn" href="#">Pyydä tarjous
+						<span class="icon">1</span></a>
+
+						<!-- Modal popup -->
+						<div class="modal" id="overlay">
+							<div class="popup-content">
+								<span class="close">&times;</span>
+								<div class="modal-top">
+									<h2 class="modal-top_title">Pyydä tarjous</h2>
+									<ul class="modal-top_list">
+
+										<li class="modal-top_item uppercase active">VALITSE TEKIJÄT</li>
+										<li class="modal-top_item uppercase">TARJOUSPYYNTÖ</li>
+									</ul>
+								</div>
+								<div class="modal-bottom">
+									<p class="modal-bottop_desc">Voit valita korkeintaan kolme tekijää listaltasi ja lähettää heille tarjouspyynnön.</p>
+									<div class="modal-bottom_block">
+										<div class="modal-bottom_img">
+											<img src="images/catalog-1.jpg" alt="catalog-1">
+										</div>
+										<div class="modal-bottom_inf">
+											<h4>Tammijuuri</h4>
+											<p class="modal-bottom_adress">HELSINKI</p>
+											<ul class="tag-list">
+												<li class="tag-list_item">Terassit</li>
+												<li class="tag-list_item">Katot</li>
+												<li class="tag-list_item">Sisämaalaukset</li>
+												<li class="tag-list_item">Sisämaalaukset</li>
+												<li class="tag-list_item">Katot</li>
+												<li class="tag-list_item">Terassit</li>
+											</ul>
+										</div>
+										<div class="modal-remove">
+											<a class="modal-bottom_remove">
+												<img src="images/remove-button.png" alt="remove-btn">
+											</a>
+										</div>
+									</div>
+									<div class="modal-bottom_btn text-right">
+										<a class="btn modal-btn" href="#">Seuraava</a>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<!-- End Modal popup -->
+					</div>
+
+					<!-- Mobile menu -->
+					<div class="mobile-menu_icon"></div>
+					<nav class="mobile-menu_block">
+						<ul class="mobile-menu_list">
+							<li lass="mobile-menu_item">
+								<a class="mobile-menu_link" href="#">Tekijät</a>
+							</li>
+							<li lass="mobile-menu_item">
+								<a class="mobile-menu_link" href="#">Tietoa palvelusta</a>
+							</li>
+							<li lass="mobile-menu_item">
+								<a class="mobile-menu_link q" href="#">Pyydä tarjous
+									<span>(1)</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- End Mobile menu -->
+			</menu>
+			<!-- End Desc menu -->
+		</div>
+
+	</header>
+	<!-- End Header -->
+
+
+	<!-- Main -->
+	<section class="main-block">
+		<!-- Search -->
+		<div class="search-block">
+			<div class="container">
+				<p class="search-label align-middle">HAE</p>
+				<form class="search_form">
+					<input type="text" class="search-form_input">
+				</form>
+				<div class="search_filter">
+					<p class="search-label search_filter-label">LAJITTELUPERUSTE</p>
+					<ul class="search_filter-list">
+						<li class="search_filter-item">
+							<a class="search_filter-link active" href="">Työnäytteet</a>
+						</li>
+						<li class="search_filter-item">
+							<a class="search_filter-link" href="">Nimi</a>
+						</li>
+						<li class="search_filter-item">
+							<a class="search_filter-link" href="">Palaute</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Seacrh -->
+
+
+		<!-- Filter -->
+		<div class="filter-block">
+			<div class="filter_top">
+				<div class="container">
+					<p class="search-label align-middle">VALITSE MAALAUSTYÖ</p>
+					<ul class="filter-list">
+						<li class="filter-item">
+							<a href="" class="filter-link active" data-filter="*">All</a>
+						</li>
+						<li class="filter-item">
+							<a href="" class="filter-link" data-filter=".katot">Katot</a>
+						</li>
+						<li class="filter-item">
+							<a href="#" class="filter-link" data-filter=".sisämaalaukset">Sisämaalaukset</a>
+						</li>
+						<li class="filter-item">
+							<a href="#" class="filter-link" data-filter=".terassit">Terassit</a>
+						</li>
+						<li class="filter-item">
+							<a href="#" class="filter-link" data-filter=".efektimaalaus">Efektimaalaus</a>
+						</li>
+						<li class="filter-item">
+							<a href="#" class="filter-link" data-filter=".lattiat">Lattiat</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="filter_bottom text-center">
+				<div class="container">
+					<p>Etsi projektiisi sopivia urakoitsijoita ja pyydä tarjous!</p>
+				</div>
+			</div>
+		</div>
+		<!-- End Filter -->
+
+		<!-- Catalog-->
+		<div class="container">
+			<div class="catalog-list">
+				<!-- Catalog-item -->
+				<div class="catalog-item katot lattiat efektimaalaus sisämaalaukset terassit clearfix ">
+					<div class="catalog-item_left">
+						<div class="catalog-item_left-img">
+							<img src="images/catalog-1.jpg" alt="catalog-1">
+						</div>
+						<div class="catalog-item_left-descr">
+							<h2>
+								<a class="catalog-title" href="#">Tammijuuri</a>
+							</h2>
+							<div class="catalog-item_left-cont">
+								<p class="catalog-item_left-adress">HELSINKI</p>
+								<p class="catalog-cont_link catalog-item_left-tel">
+									<a href="tel:+34568765475">+34568765475</a>
+								</p>
+								<p class="catalog-cont_link catalog-item_left-email"><a href="mailto:lauri@tammijuuri.fi">lauri@tammijuuri.fi</a></p>
+								<p class="catalog-item_left-inf">Tammijuuri on ystävällinen ja ihmisläheinen maalausliike Helsingistä. Keskityn pääasiassa asuinhuoneistojen ja pienten liiketilojen pintakäsittelyyn. Toiminta-alueeni on pääosin pääkaupunkiseudulla. Maalarin palveluiden lisäksi teen myös tapetoinnit, laminaattilattioiden asennukset, nauhoitus-, tasoite-, ja verkotustyöt sekä pienet ulkomaalaustyöt ammattitaidolla ja asiakkaiden toiveiden ehdolla. Maalauspalvelussani huomioin ympäristön ja luonnon muun muassa kierrättämällä kaiken mahdollisen työstä aiheutuvan jätteen ja käyttämällä ympäristöystävällisiä tarvikkeita ja materiaaleja.</p>
+								<ul class="tag-list">
+									<li class="tag-list_item">Katot</li>
+									<li class="tag-list_item">Sisämaalaukset</li>
+									<li class="tag-list_item">Efektimaalaus</li>
+									<li class="tag-list_item">Lattiat</li>
+									<li class="tag-list_item">Terassit</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item_right">
+						<button class="btn catalog-btn">
+							<span class="nutral">Pyydä tarjous!</span>
+							<span class="selected">Lisätty listalle</span>
+						</button>
+						<ul class="catalog-item_right-list">
+							<li class="catalog-item_right-icon icon_top"></li>
+							<li class="catalog-item_right-icon icon_bottom">11</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Catalog-item -->
+
+
+				<!-- Catalog-item -->
+				<div class="catalog-item terassit efektimaalaus clearfix">
+					<div class="catalog-item_left">
+						<div class="catalog-item_left-img">
+							<img src="images/catalog-2.jpg" alt="catalog-2">
+						</div>
+						<div class="catalog-item_left-descr">
+							<h2>
+								<a class="catalog-title" href="#">Tmi Antti Puumanen</a>
+							</h2>
+							<div class="catalog-item_left-cont">
+								<p class="catalog-item_left-adress uppercase">HELSINKI</p>
+								<p class="catalog-cont_link catalog-item_left-tel">
+									<a href="tel:+34568765475">+34568765475</a>
+								</p>
+								<p class="catalog-cont_link catalog-item_left-email"><a href="mailto:lauri@tammijuuri.fi">lauri@tammijuuri.fi</a></p>
+								
+								<p class="catalog-item_left-inf">Vuodesta 2010 toiminimellä maalausalan pien urakoitsijana ja ali-urakoitsijana töitä tehnyt yhdenmiehen yritys. Koulutukseltani olen Maalari-artesaani.pt sekä Restaurointi-Kisälli.at. Erikois-osaamisena Marmorointi/kivijäljennökset.</p>
+								<ul class="tag-list">
+									<li class="tag-list_item">Efektimaalaus</li>
+									<li class="tag-list_item">katot</li>
+								</ul>	
+							</div>
+						</div>
+					</div>	
+
+					<div class="catalog-item_right">
+						<button class="btn catalog-btn">
+							<span class="nutral">Pyydä tarjous!</span>
+							<span class="selected">Lisätty listalle</span>
+						</button>
+						<ul class="catalog-item_right-list">
+							<li class="catalog-item_right-icon icon_top"></li>
+
+							<li class="catalog-item_right-icon icon_bottom">11</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Catalog-item -->
+
+
+				<!-- Catalog-item -->
+				<div class="catalog-item sisämaalaukset clearfix">
+					<div class="catalog-item_left">
+						<div class="catalog-item_left-img">
+							<img src="images/catalog-3.jpg" alt="catalog-3">
+						</div>
+						<div class="catalog-item_left-descr">
+							<h2>
+								<a class="catalog-title" href="#">Design Saarinen Sisustussuunnittelu & Erikoismaalaus</a>
+							</h2>
+							<div class="catalog-item_left-cont">
+								<p class="catalog-item_left-adress uppercase">ROVANIEMI</p>
+								<p class="catalog-cont_link catalog-item_left-tel">
+									<a href="tel:+34568765475">0407602034</a>
+								</p>
+								<p class="catalog-cont_link catalog-item_left-email"><a href="mailto:lauri@tammijuuri.fi"> marjo@designsaarinen.fi</a></p>
+								
+								<p class="catalog-item_left-inf">Tarjoan Sinulle sisustussuunnittelu- ja erikoismaalauspalvelua, jota teen suurella sydämellä -asiakkaan toiveiden ja mieltymysten mukaisesti. Saat pikaiset vinkit tai kokonaisvaltaiset sisustussuunnitelmat, oli kohteena sitten koti, vapaa-ajan asunto, julkinen tila tai työympäristö.</p>
+								<ul class="tag-list">
+									<li class="tag-list_item">Sisämaalaukset</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item_right">
+						<button class="btn catalog-btn">
+							<span class="nutral">Pyydä tarjous!</span>
+							<span class="selected">Lisätty listalle</span>
+						</button>
+						<ul class="catalog-item_right-list">
+							<li class="catalog-item_right-icon icon_top"></li>
+							<li class="catalog-item_right-icon icon_bottom">11</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Catalog-item -->
+				
+
+				<!-- Catalog-item -->
+				<div class="catalog-item efektimaalaus clearfix">
+					<div class="catalog-item_left">
+						<div class="catalog-item_left-img">
+							<img src="images/catalog-4.jpg" alt="catalog-4">
+						</div>
+						<div class="catalog-item_left-descr">
+							<h2>
+								<a class="catalog-title" href="#">Katemaalaus</a>
+							</h2>
+							<div class="catalog-item_left-cont">
+								<p class="catalog-item_left-adress uppercase">HALIKKO</p>
+								<p class="catalog-cont_link catalog-item_left-tel">
+									<a href="tel:+34568765475">0451859659</a>
+								</p>
+								<p class="catalog-cont_link catalog-item_left-email"><a href="mailto:lauri@tammijuuri.fi"> katemaalaus@gmail.com</a></p>
+								
+								<p class="catalog-item_left-inf">Kaikki maalaustyöt ammattitaidolla,luotettavasti! - Maalaustyöt/rakennustyöt takuulla ja Suomalaisttain! - Ilmainen arviointi ja katselmus. *Tiili/Varttikatteet *Peltikatot *Julkisivut *Muut maalaus/tasoitetyöt *Kalusteasennukset,laminaatit/parketit *Väliseinät,rungot,yms.. * Vesieristykset ( VTT sertifikaatti)
+								</p>
+								<ul class="tag-list">
+									<li class="tag-list_item">Efektimaalaus</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item_right">
+						<button class="btn catalog-btn">
+							<span class="nutral">Pyydä tarjous!</span>
+							<span class="selected">Lisätty listalle</span>
+						</button>
+						<ul class="catalog-item_right-list">
+							<li class="catalog-item_right-icon icon_top"></li>
+							<li class="catalog-item_right-icon icon_bottom">11</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Catalog-item -->
+
+
+				<!-- Catalog-item -->
+				<div class="catalog-item lattiat clearfix">
+					<div class="catalog-item_left">
+						<div class="catalog-item_left-img">
+							<img src="images/catalog-5.jpg" alt="catalog-5">
+						</div>
+						<div class="catalog-item_left-descr">
+							<h2>
+								<a class="catalog-title" href="#">UUSIKYLÄ</a>
+							</h2>
+							<div class="catalog-item_left-cont">
+								<p class="catalog-item_left-adress uppercase">HALIKKO</p>
+								<p class="catalog-cont_link catalog-item_left-tel">
+									<a href="tel:+34568765475">info@navaco.fi</a>
+								</p>
+								<p class="catalog-cont_link catalog-item_left-email"><a href="mailto:lauri@tammijuuri.fi"> katemaalaus@gmail.com</a></p>
+								
+								<p class="catalog-item_left-inf">Vaihtoehto valkoiselle ! Teen kaikki maalausalaan liittyvät työt, myös erikoismaalaukset, koristemaalaukset, fantasiamaalaukset, erilaiset pintojen käsittelyt sekä taidekäsityöt ym. ym. Yksityiset sekä julkiset tilat. Uudis- ja saneerauskohteet. Pääasiallisesti etelä-suomessa, tarvittaessa kyllä laajennan reviiriäni. Kaikki työni on tehty pensseleillä sekä muilla tekniikoilla, kynäruiskua ei ole käytetty. Kotisivuillani www.navaco.fi palvelut sivulta löytyy kuvagalleriasta lisää kuvia vuosien varsilta. Suunnittelen ja toteutan juuri Teidän tarpeita vastaavan kokonaisuuden.
+								</p>
+								<ul class="tag-list">
+									<li class="tag-list_item">Lattiat</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-item_right">
+						<button class="btn catalog-btn">
+							<span class="nutral">Pyydä tarjous!</span>
+							<span class="selected">Lisätty listalle</span>
+						</button>
+						<ul class="catalog-item_right-list">
+							<li class="catalog-item_right-icon icon_top"></li>
+							<li class="catalog-item_right-icon icon_bottom">11</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Catalog-item -->
+			</div>
+		</div>
+	</section>
+	<!-- End Main-block -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-left align-top">
+					<h3>Löydä lähin luotettava tekijä!</h3>
+					<p class="footer-p">Tekijäpankista löydät osaavat ja luotettavat tekijät maalaustyöllesi.</p>
+					<a class="footer-link footer-link-icon d-block" href="#">Lue lisää</a>
+				</div>
+				<div class="footer-center align-top">
+					<h3>Yleistä</h3>
+					<ul class="footer-list">
+						<li class="footer-list_item">
+							<a class="footer-link footer-link-icon" href="#">Tietoa palvelusta</a>
+						</li>
+						<li class="footer-list_item">
+							<a class="footer-link footer-link-icon" href="#">Ota yhteyttä</a>
+						</li>
+					</ul>	
+				</div>
+				<div class="footer-right align-top">
+					<h3>Seuraa meitä</h3>
+					<ul class="footer-list">
+						<li class="footer-list_item footer-link-icon">
+							<a class="footer-link" href="#">Facebook</a>
+						</li>
+						<li class="footer-list_item footer-link-icon">
+							<a class="footer-link" href="#">Google+</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="copywrite text-center">
+					<p class="footer-bottom_p">© 2016 Tikkurila Oyj - <a href="mailto:www.tikkurila.fi">www.tikkurila.fi</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<!-- Main -->
+	<script src="js/script.js"></script>
+</body>
+</html>
